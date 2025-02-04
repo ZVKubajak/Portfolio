@@ -3,6 +3,7 @@ import { MoveRight } from "lucide-react";
 import { Download } from "lucide-react";
 import { Github } from "lucide-react";
 import { Linkedin } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 
 const Intro = () => {
   const date = new Date();
@@ -52,6 +53,9 @@ const Intro = () => {
         className="sm:hidden text-center text-2xl"
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
+        transition={{
+          delay: 0.5,
+        }}
       >
         Hey, I'm Zander! 👋 I am a{" "}
         <span className="font-semibold">full-stack web developer</span>{" "}
@@ -88,9 +92,9 @@ const Intro = () => {
           delay: 0.6,
         }}
       >
-        <motion.div className="space-y-2 sm:flex sm:justify-center">
+        <div className="sm:flex sm:justify-center">
           <a href="#contact">
-            <button className="group flex rounded-full bg-slate-900 text-slate-50 text-2xl px-4 py-1.5 mx-auto sm:mx-2 lg:mx-0.5 xl:mx-1 2xl:mx-1.5 cursor-pointer outline-none focus:scale-110 hover:scale-110 active:scale-105 transition">
+            <button className="group flex rounded-full bg-slate-900 text-slate-50 text-2xl px-4 py-1.5 mb-2 sm:mb-0 mx-auto sm:mx-2 lg:mx-0.5 xl:mx-1 2xl:mx-1.5 cursor-pointer outline-none focus:scale-110 hover:scale-110 active:scale-105 transition">
               Contact Me{" "}
               <MoveRight className="opacity-75 mt-1.5 ml-2 group-hover:translate-x-1 transition" />
             </button>
@@ -100,7 +104,7 @@ const Intro = () => {
             Download Resume{" "}
             <Download className="opacity-75 mt-1 ml-2 group-hover:translate-y-1 transition" />
           </button>
-        </motion.div>
+        </div>
 
         <div className="flex justify-center space-x-4 lg:space-x-1 2xl:space-x-2 lg:mb-2">
           <a
@@ -124,6 +128,39 @@ const Intro = () => {
           </a>
         </div>
       </motion.div>
+
+      <div className="mt-4 text-gray-500">
+        <motion.div
+          initial={{ y: -100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{
+            duration: 0.5,
+            delay: 2.4,
+          }}
+        >
+          <ChevronDown size={40} />
+        </motion.div>
+        <motion.div
+          initial={{ y: -100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{
+            duration: 0.5,
+            delay: 2.2,
+          }}
+        >
+          <ChevronDown size={40} />
+        </motion.div>
+        <motion.div
+          initial={{ y: -100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{
+            duration: 0.5,
+            delay: 2,
+          }}
+        >
+          <ChevronDown size={40} />
+        </motion.div>
+      </div>
     </section>
   );
 };
