@@ -67,7 +67,7 @@ const Intro = () => {
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{
-          delay: 1,
+          delay: 0.5,
         }}
       >
         {greeting}! My name is Zander, and I am a{" "}
@@ -85,24 +85,28 @@ const Intro = () => {
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{
-          delay: 1,
+          delay: 0.6,
         }}
       >
-        <div className="space-y-2 sm:flex sm:justify-center">
-          <button className="flex rounded-full bg-slate-900 text-slate-50 text-2xl px-4 py-1.5 mx-auto sm:mx-2 lg:mx-0.5 xl:mx-1 2xl:mx-1.5 outline-none focus:scale-110 hover:scale-110 transition">
-            Contact Me <MoveRight className="mt-1 ml-2" />
-          </button>
+        <motion.div className="space-y-2 sm:flex sm:justify-center">
+          <a href="#contact">
+            <button className="group flex rounded-full bg-slate-900 text-slate-50 text-2xl px-4 py-1.5 mx-auto sm:mx-2 lg:mx-0.5 xl:mx-1 2xl:mx-1.5 cursor-pointer outline-none focus:scale-110 hover:scale-110 active:scale-105 transition">
+              Contact Me{" "}
+              <MoveRight className="opacity-75 mt-1.5 ml-2 group-hover:translate-x-1 transition" />
+            </button>
+          </a>
 
-          <button className="flex rounded-full bg-slate-50 text-neutral-900 text-2xl lg:text-xl xl:text-2xl px-4 py-1.5 mx-auto sm:mb-1 sm:mx-2 lg:mx-0.5 xl:mx-1 2xl:mx-1.5 border-2 border-gray-200 outline-none focus:scale-110 hover:scale-110 transition">
-            Download Resume <Download className="mt-1 ml-2" />
+          <button className="group flex rounded-full bg-slate-50 text-neutral-900 text-2xl lg:text-xl xl:text-2xl px-4 py-1.5 mx-auto sm:mb-1 sm:mx-2 lg:mx-0.5 xl:mx-1 2xl:mx-1.5 cursor-pointer border-2 border-gray-200 outline-none focus:scale-110 hover:scale-110 active:scale-105 transition">
+            Download Resume{" "}
+            <Download className="opacity-75 mt-1 ml-2 group-hover:translate-y-1 transition" />
           </button>
-        </div>
+        </motion.div>
 
         <div className="flex justify-center space-x-4 lg:space-x-1 2xl:space-x-2 lg:mb-2">
-          <button className="rounded-full bg-slate-50 text-neutral-900 p-2.5 border-2 border-gray-200">
+          <button className="rounded-full bg-slate-50 text-neutral-900 p-2.5 border-2 border-gray-200 hover:bg-black hover:text-white hover:scale-105 active:scale-95 transition">
             <Github size={28} />
           </button>
-          <button className="rounded-full bg-slate-50 text-neutral-900 p-2.5 border-2 border-gray-200">
+          <button className="rounded-full bg-slate-50 text-neutral-900 p-2.5 border-2 border-gray-200 hover:bg-sky-600 hover:text-white hover:scale-105 active:scale-95 transition">
             <Linkedin size={28} />
           </button>
         </div>
