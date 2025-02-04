@@ -103,12 +103,25 @@ const Intro = () => {
         </motion.div>
 
         <div className="flex justify-center space-x-4 lg:space-x-1 2xl:space-x-2 lg:mb-2">
-          <button className="rounded-full bg-slate-50 text-neutral-900 p-2.5 border-2 border-gray-200 hover:bg-black hover:text-white hover:scale-105 active:scale-95 transition">
-            <Github size={28} />
-          </button>
-          <button className="rounded-full bg-slate-50 text-neutral-900 p-2.5 border-2 border-gray-200 hover:bg-sky-600 hover:text-white hover:scale-105 active:scale-95 transition">
-            <Linkedin size={28} />
-          </button>
+          <a
+            href="https://github.com/ZVKubajak"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="rounded-full bg-slate-50 text-neutral-900 p-2.5 border-2 border-gray-200 hover:bg-black hover:text-white hover:scale-105 active:scale-95 transition">
+              <Github size={28} />
+            </button>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/zander-kubajak-b37792335/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="rounded-full bg-slate-50 text-neutral-900 p-2.5 border-2 border-gray-200 hover:bg-sky-600 hover:text-white hover:scale-105 active:scale-95 transition">
+              <Linkedin size={28} />
+            </button>
+          </a>
         </div>
       </motion.div>
     </section>
