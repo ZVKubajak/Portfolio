@@ -1,3 +1,8 @@
+import { MoveRight } from "lucide-react";
+import { Download } from "lucide-react";
+import { Github } from "lucide-react";
+import { Linkedin } from "lucide-react";
+
 const Intro = () => {
   const date = new Date();
   let greeting = "Hello";
@@ -11,7 +16,7 @@ const Intro = () => {
   }
 
   return (
-    <section className="flex flex-col items-center space-y-8 mx-8 md:mx-28 lg:mx-56 xl:mx-80">
+    <section className="flex flex-col items-center space-y-8 2xl:space-y-12 mx-8 md:mx-28 lg:mx-56 xl:mx-80">
       <div className="relative">
         <img
           src="https://ui-avatars.com/api/?name=John+Doe"
@@ -41,9 +46,29 @@ const Intro = () => {
           TypeScript, React, TailwindCSS, Prisma,
         </span>{" "}
         and more. Creating{" "}
-        <span className="italic">type-safe applications</span> is my
-        passion.
+        <span className="italic">type-safe applications</span> is my passion.
       </p>
+
+      <div className="w-full space-y-4 sm:space-y-2 lg:flex lg:justify-center lg:space-x-3">
+        <div className="space-y-2 sm:flex sm:justify-center">
+          <button className="flex rounded-full bg-slate-900 text-slate-50 text-2xl px-4 py-1.5 mx-auto sm:mx-2 lg:mx-0.5 xl:mx-1 2xl:mx-1.5">
+            Contact Me <MoveRight className="mt-1 ml-2" />
+          </button>
+
+          <button className="flex rounded-full bg-slate-50 text-neutral-900 text-2xl lg:text-xl xl:text-2xl px-4 py-1.5 mx-auto sm:mb-1 sm:mx-2 lg:mx-0.5 xl:mx-1 2xl:mx-1.5 border-2 border-gray-200">
+            Download Resume <Download className="mt-1 ml-2" />
+          </button>
+        </div>
+
+        <div className="flex justify-center space-x-4 lg:space-x-1 2xl:space-x-2 lg:mb-2">
+          <button className="rounded-full bg-slate-50 text-neutral-900 p-2.5 border-2 border-gray-200">
+            <Github size={28} />
+          </button>
+          <button className="rounded-full bg-slate-50 text-neutral-900 p-2.5 border-2 border-gray-200">
+            <Linkedin size={28} />
+          </button>
+        </div>
+      </div>
     </section>
   );
 };
