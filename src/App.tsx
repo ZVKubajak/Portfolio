@@ -1,5 +1,9 @@
 import Header from "./layout/Header";
 import Intro from "./components/Intro";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -11,6 +15,10 @@ function App() {
         <div className="hidden lg:block absolute top-52 right-32 xl:right-72 2xl:right-96 -z-10 bg-sky-300 2xl:bg-sky-400 h-72 w-72 rounded-full blur-[150px] 2xl:blur-[180px]" />
 
         <Intro />
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
       </main>
     </>
   );
