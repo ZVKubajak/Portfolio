@@ -12,10 +12,16 @@ const Intro = () => {
 
   return (
     <section className="flex flex-col items-center space-y-8 mx-8 md:mx-28 lg:mx-56 xl:mx-80">
-      <img
-        src="https://ui-avatars.com/api/?name=John+Doe"
-        className="border-4 border-white shadow-xl rounded-full size-28"
-      />
+      <div className="relative">
+        <img
+          src="https://ui-avatars.com/api/?name=John+Doe"
+          className="border-4 border-white shadow-xl rounded-full size-28"
+        />
+
+        <span className="hidden sm:block absolute bottom-0 right-0 text-4xl">
+          👋
+        </span>
+      </div>
 
       <p className="sm:hidden text-center text-2xl">
         Hey, I'm Zander! 👋 I am a{" "}
@@ -35,7 +41,7 @@ const Intro = () => {
           TypeScript, React, TailwindCSS, Prisma,
         </span>{" "}
         and more. Creating{" "}
-        <span className="font-semibold">type-safe applications</span> is my
+        <span className="italic">type-safe applications</span> is my
         passion.
       </p>
     </section>
