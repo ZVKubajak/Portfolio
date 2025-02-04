@@ -2,8 +2,8 @@
 
 const sections = [
   {
-    name: "Home",
-    reference: "#home",
+    name: "Intro",
+    reference: "#intro",
   },
   {
     name: "About",
