@@ -13,7 +13,9 @@ const Header = () => {
       >
         <div className="flex flex-wrap justify-evenly w-4/5 mx-auto text-xl font-semibold space-x-4 py-2 lg:mt-8 lg:w-1/2 lg:bg-white lg:opacity-70 lg:border lg:border-gray-500 lg:shadow-lg lg:shadow-black/15 lg:rounded-full lg:space-x-0 xl:w-2/5 2xl:w-1/3">
           {sections.map((section, index) => (
-            <a key={index}>{section.name}</a>
+            <motion.a className="hover:text-blue-900 transition" key={index} href={section.reference}>
+              {section.name}
+            </motion.a>
           ))}
         </div>
       </motion.div>

@@ -21,6 +21,6 @@ const sections = [
     name: "Contact",
     reference: "#contact",
   }
-];
+] as const;
 
 export default sections;
