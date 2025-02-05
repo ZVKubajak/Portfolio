@@ -1,13 +1,17 @@
+import SectionHeading from "./SectionHeading";
 import { motion } from "motion/react";
 
 const About = () => {
   return (
-    <section className="mt-20 mx-12 sm:mx-20 space-y-8 text-center">
-      <motion.h1 className="text-3xl xl:text-4xl 2xl:text-5xl font-semibold">
-        About Me
-      </motion.h1>
+    <motion.section
+      className="mt-20 mx-12 sm:mx-20 space-y-8 text-center"
+      initial={{ y: 100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ delay: 0.7 }}
+    >
+      <SectionHeading>About Me</SectionHeading>
 
-      <motion.p className="text-xl xl:text-xl/10 2xl:text-2xl/10 md:mx-auto md:w-3/4 lg:w-1/2">
+      <p className="text-xl xl:text-xl/10 2xl:text-2xl/10 md:mx-auto md:w-3/4 lg:w-1/2">
         <span className="italic">With over a year of experience</span>, I've
         built multiple full-stack websites using modern tools such as{" "}
         <span className="underline underline-offset-2">React and Prisma</span>.
@@ -30,8 +34,8 @@ const About = () => {
           continue growing and building great applications
         </span>
         .
-      </motion.p>
-    </section>
+      </p>
+    </motion.section>
   );
 };
 
