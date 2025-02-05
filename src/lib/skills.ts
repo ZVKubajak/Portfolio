@@ -15,7 +15,6 @@ const skills = [
   "Framer Motion",
   "Python",
   "Zod",
-  "AI",
-];
+] as const;
 
 export default skills;
