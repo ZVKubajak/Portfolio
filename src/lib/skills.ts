@@ -6,15 +6,19 @@ const skills = [
   "React",
   "Node.js",
   "Express",
+  "JWT",
   "Prisma",
   "PSQL",
+  "Sequlize",
   "MongoDB",
+  "Mongoose",
   "GraphQL",
+  "AWS",
+  "Zod",
   "Bootstrap",
   "Tailwind",
   "Framer Motion",
   "Python",
-  "Zod",
 ] as const;
 
 export default skills;

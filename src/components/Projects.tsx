@@ -7,9 +7,7 @@ const Projects = () => {
 
       <h2>Best Work</h2>
 
-      <h2>Other Projects</h2>
-
-      <div></div>
+      {/* <h2>Other Projects</h2> */}
     </section>
   );
 };

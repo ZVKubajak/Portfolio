@@ -1,25 +1,61 @@
 export const projects = [
   {
     name: "Stellabyte",
-    description: "",
+    description:
+      "Mobile-first cloud storage application with a cosmic twist. My goal with Stellabyte was to practice Zod schema validation and media queries using TailwindCSS.",
+    isSolo: false,
+    roles: [
+      "Backend Development",
+      "Frontend Logic",
+      "Authentication",
+      "Media Queries",
+    ],
+    technologies: [
+      "React",
+      "TypeScript",
+      "JWT",
+      "Zod",
+      "Prisma",
+      "AWS S3",
+      "Tailwind",
+    ],
     site: "",
     link: "https://github.com/ZVKubajak/Stellabyte",
   },
   {
-    name: "Digbi AI",
-    description: "",
-    site: "",
-    link: "https://github.com/ZVKubajak/Digbi-AI",
-  },
-  {
     name: "codeBounty",
-    description: "",
+    description:
+      "Mock-Fiverr website where developers accept job listings posted by clients. Completely internal system with no third-party APIs. First time using Apollo GraphQL.",
+    isSolo: false,
+    roles: ["Backend Development", "Frontend Logic", "Page Creation"],
+    technologies: [
+      "React",
+      "TypeScript",
+      "JWT",
+      "GraphQL",
+      "MongoDB",
+      "React Bootstrap",
+    ],
     site: "",
     link: "https://github.com/ZVKubajak/codeBounty",
   },
   {
+    name: "Digbi AI",
+    description:
+      "Innovative text-to-video (TTV) chatbot powered by the OpenAI and D-ID APIs. When given a JSON file and prompt, it returns a video of the selected face speaking the AI generated response.",
+    isSolo: false,
+    roles: ["Backend Development", "API Integration"],
+    technologies: ["React", "TypeScript", "JWT", "PSQL", "AWS S3", "OpenAI"],
+    site: "",
+    link: "https://github.com/ZVKubajak/Digbi-AI",
+  },
+  {
     name: "Lifeguard Rotation Tracker",
-    description: "",
+    description:
+      "Frontend application designed to track lifeguard rotations. This is my first ever project, and it was used and commended by my coworkers in the summer of 2024.",
+    isSolo: true,
+    roles: null,
+    technologies: ["HTML", "CSS", "JavaScript"],
     site: "",
     link: "https://github.com/ZVKubajak/Lifeguard-Rotation-Tracker",
   },
@@ -28,25 +64,55 @@ export const projects = [
 export const otherProjects = [
   {
     name: "Quoteful",
-    description: "",
+    description:
+      "Write or generate quotes with the help of AI and share your thoughts with other users. Although it lacks media queries, it was good practice for learning TailwindCSS and Prisma.",
+    isSolo: true,
+    roles: null,
+    technologies: [
+      "React",
+      "TypeScript",
+      "JWT",
+      "Tailwind",
+      "Prisma",
+      "OpenAI",
+    ],
     site: "",
     link: "https://github.com/ZVKubajak/Quoteful",
   },
   {
     name: "Book Page",
-    description: "",
+    description:
+      "The online library for searching up books and keeping track of your favorite reads.",
+    isSolo: false,
+    roles: ["Route Handling", "Page Creation", "README"],
+    technologies: [
+      "React",
+      "TypeScript",
+      "JWT",
+      "PSQL",
+      "NYT API",
+      "Google Books API",
+    ],
     site: "",
     link: "https://github.com/ZVKubajak/book-page",
   },
   {
     name: "Employee Tracker",
-    description: "",
+    description:
+      "CLI application for a SQL database that keeps track of departments, roles, managers, and employees.",
+    isSolo: true,
+    roles: null,
+    technologies: ["PSQL", "TypeScript", "Inquirer"],
     site: "",
     link: "https://github.com/ZVKubajak/employee-tracker",
   },
   {
     name: "Cash Guardian",
-    description: "",
+    description:
+      "Finance tracker that watches monthly income and expenses using responsive charts to display data. My first group project.",
+    isSolo: false,
+    roles: ["Page Creation", "README"],
+    technologies: ["HTML", "CSS", "Bootstrap", "JavaScript", "Chart.js"],
     site: "",
     link: "https://github.com/ZVKubajak/cash-guardian",
   },
