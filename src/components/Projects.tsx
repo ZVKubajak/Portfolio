@@ -11,7 +11,7 @@ const Projects = () => {
 
       <h2 className="text-2xl xl:text-4xl 2xl:text-5xl">Best Work</h2>
 
-      <div className="space-y-8">
+      <div>
         {projects.map((project, index) => (
           <React.Fragment key={index}>
             <Project {...project} />
@@ -30,48 +30,34 @@ const Project = ({
   name,
   description,
   technologies,
+  image,
   site,
   link,
 }: ProjectProps) => {
   return (
-    <article className="relative bg-gray-100 border border-black/40 rounded-lg shadow-md text-left px-2 py-1">
-      <h3 className="text-xl font-semibold mb-1">{name}</h3>
+    <article className="text-left bg-gray-100 w-[672px] h-[320px] mx-auto border border-black/5 overflow-hidden sm:pr-8 relative">
+      <div className="py-4 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:w-1/2">
+        <h3 className="text-2xl font-semibold">{name}</h3>
 
-      <p className="leading-snug mt-3">{description}</p>
+        <p className="mt-2  text-gray-700">{description}</p>
 
-      <ul className="flex flex-wrap w-3/4 gap-1 text-[14px] mt-3">
-        {technologies.map((technology, index) => (
-          <li
-            key={index}
-            className="bg-slate-800 text-slate-50 border rounded-full px-3"
-          >
-            {technology}
-          </li>
-        ))}
-      </ul>
-
-      <div className="absolute -bottom-4 right-4 z-10 bg-gray-200 border border-black/40 rounded-full shadow-md h-8 space-x-2.5 px-2 border-">
-        <a
-          href={site}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="outline-none"
-        >
-          <button className="cursor-pointer mt-1 outline-none focus:scale-110 hover:scale-110 active:scale-90 transition">
-            <Monitor size={24} />
-          </button>
-        </a>
-        <a
-          href={link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="outline-none"
-        >
-          <button className="cursor-pointer mt-1 outline-none focus:scale-110 hover:scale-110 active:scale-90 transition">
-            <Github size={24} />
-          </button>
-        </a>
+        <ul className="flex flex-wrap mt-4 gap-2">
+          {technologies.map((technology, index) => (
+            <li
+              className="bg-black/[0.7] px-3 py-1 text-[11.2px] uppercase tracking-wider text-white rounded-full"
+              key={index}
+            >
+              {technology}
+            </li>
+          ))}
+        </ul>
       </div>
+
+      <img
+        src={image}
+        alt="Project Image"
+        className="absolute top-8 -right-40 w-[452px] rounded-t-lg shadow-2xl h-[300px] object-cover object-left"
+      />
     </article>
   );
 };
