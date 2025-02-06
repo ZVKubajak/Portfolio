@@ -1,3 +1,8 @@
+import stellabytePNG from "@/public/stellabyte.png";
+import codeBountyPNG from "@/public/code-bounty.png";
+import digbiAIPNG from "@/public/digbi-ai.png";
+import lifeguardRTPNG from "@/public/lifeguard-rt.png";
+
 export const projects = [
   {
     name: "Stellabyte",
@@ -12,6 +17,7 @@ export const projects = [
       "AWS S3",
       "Tailwind",
     ],
+    image: stellabytePNG,
     site: "",
     link: "https://github.com/ZVKubajak/Stellabyte",
   },
@@ -27,6 +33,7 @@ export const projects = [
       "MongoDB",
       "React Bootstrap",
     ],
+    image: codeBountyPNG,
     site: "",
     link: "https://github.com/ZVKubajak/codeBounty",
   },
@@ -35,6 +42,7 @@ export const projects = [
     description:
       "Innovative text-to-video (TTV) chatbot powered by the OpenAI and D-ID APIs. When given a JSON file and prompt, it returns a video of the selected face speaking the AI generated response.",
     technologies: ["React", "TypeScript", "JWT", "PSQL", "AWS S3", "OpenAI"],
+    image: digbiAIPNG,
     site: "",
     link: "https://github.com/ZVKubajak/Digbi-AI",
   },
@@ -43,6 +51,7 @@ export const projects = [
     description:
       "Frontend application designed to track lifeguard rotations. This is my first ever project, and it was used and commended by my coworkers in the summer of 2024.",
     technologies: ["HTML", "CSS", "JavaScript"],
+    image: lifeguardRTPNG,
     site: "",
     link: "https://github.com/ZVKubajak/Lifeguard-Rotation-Tracker",
   },
