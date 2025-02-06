@@ -50,7 +50,7 @@ export const projects = [
     link: "https://github.com/ZVKubajak/Digbi-AI",
   },
   {
-    name: "Lifeguard Rotation Tracker",
+    name: "Lifeguard RT",
     description:
       "Frontend application designed to track lifeguard rotations. This is my first ever project, and it was used and commended by my coworkers in the summer of 2024.",
     isSolo: true,
