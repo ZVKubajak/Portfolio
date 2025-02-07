@@ -70,6 +70,7 @@ export const otherProjects = [
       "Prisma",
       "OpenAI",
     ],
+    logo: "",
     site: "",
     link: "https://github.com/ZVKubajak/Quoteful",
   },
@@ -85,6 +86,7 @@ export const otherProjects = [
       "NYT API",
       "Google Books API",
     ],
+    logo: "",
     site: "",
     link: "https://github.com/ZVKubajak/book-page",
   },
@@ -93,6 +95,7 @@ export const otherProjects = [
     description:
       "CLI application for a SQL database that keeps track of departments, roles, managers, and employees.",
     technologies: ["PSQL", "TypeScript", "Inquirer"],
+    logo: "",
     site: "",
     link: "https://github.com/ZVKubajak/employee-tracker",
   },
@@ -101,6 +104,7 @@ export const otherProjects = [
     description:
       "Finance tracker that watches monthly income and expenses using responsive charts to display data. My first group project.",
     technologies: ["HTML", "CSS", "Bootstrap", "JavaScript", "Chart.js"],
+    logo: "",
     site: "",
     link: "https://github.com/ZVKubajak/cash-guardian",
   },
