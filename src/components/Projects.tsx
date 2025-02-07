@@ -9,7 +9,7 @@ const Projects = () => {
     <section className="mt-28 mx-auto w-4/5 md:w-3/5 xl:w-1/2 text-center space-y-8">
       <SectionHeading>My Projects</SectionHeading>
 
-      <h2 className="text-2xl xl:text-4xl 2xl:text-5xl">Best Work</h2>
+      <h2 className="text-2xl xl:text-3xl 2xl:text-4xl">Best Work</h2>
 
       <div>
         {projects.map((project, index) => (
@@ -35,16 +35,45 @@ const Project = ({
   link,
 }: ProjectProps) => {
   return (
-    <article className="text-left bg-gray-100 w-[672px] h-[320px] mx-auto border border-black/5 overflow-hidden sm:pr-8 relative">
-      <div className="py-4 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:w-1/2">
-        <h3 className="text-2xl font-semibold">{name}</h3>
+    <article className="relative w-4/5 xl:w-[672px] xl:h-[320px] bg-gray-100 border border-gray-200 text-left overflow-hidden mx-auto mb-4 md:mb-8 last:mb-0">
+      <div className="flex flex-col h-full xl:w-1/2 px-5 py-8">
+        <div className="flex">
+          <h3 className="text-2xl font-semibold">{name}</h3>
 
-        <p className="mt-2  text-gray-700">{description}</p>
+          <div className="flex mt-1">
+            <a
+              href={site}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="outline-none focus:scale-110"
+            >
+              <Monitor
+                size={24}
+                className="ml-4 cursor-pointer outline-none hover:scale-110 active:scale-90 transition"
+              />
+            </a>
+            <a
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="outline-none focus:scale-110"
+            >
+              <Github
+                size={24}
+                className="ml-2 cursor-pointer outline-none hover:scale-110 active-scale:90 transition"
+              />
+            </a>
+          </div>
+        </div>
 
-        <ul className="flex flex-wrap mt-4 gap-2">
+        <p className="leading-snug sm:leading-normal mt-2 lg:mb-4 text-gray-700">
+          {description}
+        </p>
+
+        <ul className="flex flex-wrap mt-4 gap-2 xl:mt-auto">
           {technologies.map((technology, index) => (
             <li
-              className="bg-black/[0.7] px-3 py-1 text-[11.2px] uppercase tracking-wider text-white rounded-full"
+              className="bg-neutral-700 px-3 py-1 text-[11px] uppercase tracking-wider text-white rounded-full"
               key={index}
             >
               {technology}
@@ -56,7 +85,7 @@ const Project = ({
       <img
         src={image}
         alt="Project Image"
-        className="absolute top-8 -right-40 w-[452px] rounded-t-lg shadow-2xl h-[300px] object-cover object-left"
+        className="hidden xl:block absolute top-8 -right-40 w-[452px] h-[300px] rounded-t-lg shadow-2xl object-cover object-left"
       />
     </article>
   );
