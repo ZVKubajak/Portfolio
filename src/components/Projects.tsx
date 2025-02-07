@@ -35,8 +35,8 @@ const Project = ({
   link,
 }: ProjectProps) => {
   return (
-    <article className="relative w-4/5 xl:w-[672px] xl:h-[320px] bg-gray-100 border border-gray-200 text-left overflow-hidden mx-auto mb-4 md:mb-8 last:mb-0">
-      <div className="flex flex-col h-full xl:w-1/2 px-5 py-8">
+    <article className="group relative w-4/5 xl:w-[640px] xl:h-[320px] bg-gray-100 border border-gray-200 text-left overflow-hidden mx-auto mb-4 md:mb-8 last:mb-0">
+      <div className="flex flex-col h-full xl:w-1/2 px-5 py-8 group-even:float-right">
         <div className="flex">
           <h3 className="text-2xl font-semibold">{name}</h3>
 
@@ -85,7 +85,7 @@ const Project = ({
       <img
         src={image}
         alt="Project Image"
-        className="hidden xl:block absolute top-8 -right-40 w-[452px] h-[300px] rounded-t-lg shadow-2xl object-cover object-left"
+        className="hidden xl:block absolute top-8 -right-40 w-[452px] h-[300px] rounded-t-lg shadow-2xl object-cover object-left group-even:right-[initial] group-even:-left-40"
       />
     </article>
   );

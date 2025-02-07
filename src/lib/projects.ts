@@ -1,7 +1,7 @@
 import stellabytePNG from "../../public/stellabyte.png";
 import codeBountyPNG from "../../public/code-bounty.png";
 import digbiAIPNG from "../../public/digbi-ai.png";
-import lifeguardRTPNG from "../../public/lifeguard-rt.png";
+import lifeguardRTPNG from "../../public/lifeguard-rt-1.png";
 
 export const projects = [
   {
