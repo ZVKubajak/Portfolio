@@ -19,12 +19,15 @@ const Projects = () => {
         ))}
       </div>
 
-      <h2 className="mt-12 text-2xl xl:text-3xl 2xl:text-4xl">Other Projects</h2>
+      <div className="hidden xl:block">
+        <h2 className="mt-16 text-2xl xl:text-3xl 2xl:text-4xl">
+          Other Projects
+        </h2>
 
         <div className="mt-8">
-
+          <OtherProject />
         </div>
-      <OtherProject />
+      </div>
     </section>
   );
 };

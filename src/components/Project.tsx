@@ -70,8 +70,8 @@ const Project = ({
           <ul className="flex flex-wrap mt-4 gap-2 xl:mt-auto">
             {technologies.map((technology, index) => (
               <li
-                className="bg-neutral-700 px-3 py-1 text-[11px] uppercase tracking-wider text-white rounded-full"
                 key={index}
+                className="bg-neutral-700 px-3 py-1 text-[11px] uppercase tracking-wider text-white rounded-full"
               >
                 {technology}
               </li>

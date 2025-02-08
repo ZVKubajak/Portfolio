@@ -1,7 +1,9 @@
 import stellabytePNG from "../../public/stellabyte.png";
 import codeBountyPNG from "../../public/code-bounty.png";
 import digbiAIPNG from "../../public/digbi-ai.png";
-import lifeguardRTPNG from "../../public/lifeguard-rt-1.png";
+import lifeguardRTPNG from "../../public/lifeguard-rt.png";
+
+import employeeTrackerPNG from "../../public/employee-tracker.png";
 
 export const projects = [
   {
@@ -70,7 +72,7 @@ export const otherProjects = [
       "Prisma",
       "OpenAI",
     ],
-    logo: "",
+    logo: employeeTrackerPNG,
     site: "",
     link: "https://github.com/ZVKubajak/Quoteful",
   },
@@ -86,7 +88,7 @@ export const otherProjects = [
       "NYT API",
       "Google Books API",
     ],
-    logo: "",
+    logo: employeeTrackerPNG,
     site: "",
     link: "https://github.com/ZVKubajak/book-page",
   },
@@ -95,7 +97,7 @@ export const otherProjects = [
     description:
       "CLI application for a SQL database that keeps track of departments, roles, managers, and employees.",
     technologies: ["PSQL", "TypeScript", "Inquirer"],
-    logo: "",
+    logo: employeeTrackerPNG,
     site: "",
     link: "https://github.com/ZVKubajak/employee-tracker",
   },
@@ -104,7 +106,7 @@ export const otherProjects = [
     description:
       "Finance tracker that watches monthly income and expenses using responsive charts to display data. My first group project.",
     technologies: ["HTML", "CSS", "Bootstrap", "JavaScript", "Chart.js"],
-    logo: "",
+    logo: employeeTrackerPNG,
     site: "",
     link: "https://github.com/ZVKubajak/cash-guardian",
   },
