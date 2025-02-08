@@ -1,5 +1,3 @@
-import React from "react";
-import ContactEmail from "../src/email/ContactEmail";
 import { Resend } from "resend";
 import dotenv from "dotenv";
 
@@ -15,7 +13,7 @@ export default async function handler(req, res) {
       from: "ZVK Portfolio <onboarding@resend.dev>",
       to: "zvkubajak@gmail.com",
       subject: "Message From Your Portfolio",
-      react: React.createElement(ContactEmail, { email, message }),
+      text: message,
       replyTo: email,
     });
 
