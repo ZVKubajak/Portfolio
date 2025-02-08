@@ -58,7 +58,7 @@ const Contact = () => {
         className="flex flex-col mt-8 gap-y-4 md:text-lg lg:text-2xl sm:mx-auto sm:w-4/5 md:w-full lg:w-4/5 2xl:w-3/4"
       >
         <input
-          // type="email"
+          type="email"
           value={formData.email}
           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
           required
@@ -74,7 +74,7 @@ const Contact = () => {
           }
           required
           minLength={10}
-          maxLength={500}
+          maxLength={1000}
           placeholder="Message"
           className="resize-none h-32 lg:h-40 bg-white border border-gray-200 rounded-lg px-2 py-1.5"
         />

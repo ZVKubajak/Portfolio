@@ -10,10 +10,12 @@ export default async function handler(req, res) {
 
   try {
     const { data, error } = await resend.emails.send({
-      from: `${email}@resend.dev`,
+      from: "ZVK Portfolio <onboarding@resend.dev>",
       to: "zvkubajak@gmail.com",
-      subject: "Message From Portfolio",
-      html: `<p>${message}</p>`,
+      subject: "Message From Your Portfolio",
+      // text: message,
+      react:
+      replyTo: email,
     });
 
     if (error) {
