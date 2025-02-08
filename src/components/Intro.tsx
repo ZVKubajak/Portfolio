@@ -93,7 +93,7 @@ const Intro = () => {
         }}
       >
         <div className="sm:flex sm:justify-center">
-          <a href="#contact">
+          <a href="#contact" className="outline-none">
             <button className="group flex rounded-full bg-slate-900 text-slate-50 text-2xl px-4 py-1.5 mb-2 sm:mb-0 mx-auto sm:mx-2 lg:mx-0.5 xl:mx-1 2xl:mx-1.5 cursor-pointer outline-none focus:scale-110 hover:scale-110 active:scale-105 transition">
               Contact Me{" "}
               <MoveRight className="opacity-75 mt-1.5 ml-2 group-hover:translate-x-1 transition" />
@@ -111,6 +111,7 @@ const Intro = () => {
             href="https://github.com/ZVKubajak"
             target="_blank"
             rel="noopener noreferrer"
+            className="outline-none"
           >
             <button className="rounded-full bg-slate-50 text-neutral-900 p-2.5 border-2 border-gray-200 hover:bg-black hover:text-white hover:scale-105 active:scale-95 transition">
               <Github size={28} />
@@ -121,6 +122,7 @@ const Intro = () => {
             href="https://www.linkedin.com/in/zander-kubajak-b37792335/"
             target="_blank"
             rel="noopener noreferrer"
+            className="outline-none"
           >
             <button className="rounded-full bg-slate-50 text-neutral-900 p-2.5 border-2 border-gray-200 hover:bg-sky-600 hover:text-white hover:scale-105 active:scale-95 transition">
               <Linkedin size={28} />
