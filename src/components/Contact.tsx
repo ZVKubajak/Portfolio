@@ -14,18 +14,18 @@ const Contact = () => {
 
     if (success) {
       Swal.fire({
-        title: "Message Sent!",
-        text: "Thank you for getting in touch.",
+        titleText: "Message Sent!",
         icon: "success",
-        confirmButtonText: "Continue"
+        confirmButtonText: "Continue",
       }).then(() => {
         setFormData({ email: "", message: "" });
       });
     } else {
       Swal.fire({
-        title: "Whoops!",
+        titleText: "Whoops!",
         text: "An error has occurred. Please try again.",
         icon: "error",
+        confirmButtonText: "Continue",
       });
     }
   };

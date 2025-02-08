@@ -1,6 +1,9 @@
 import { Resend } from "resend";
+import dotenv from "dotenv";
 
-const resend = new Resend("re_WxJnTMGv_7evZRLLnYvyw2KhBbajHwYWY");
+dotenv.config();
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export default async function handler(req, res) {
   const { email, message } = req.body;
