@@ -1,4 +1,6 @@
 import SectionHeading from "./SectionHeading";
+import sendEmail from "../services/sendEmail";
+import Swal from "sweetalert2";
 import { useState } from "react";
 import { motion } from "motion/react";
 import { Send } from "lucide-react";
@@ -6,9 +8,26 @@ import { Send } from "lucide-react";
 const Contact = () => {
   const [formData, setFormData] = useState({ email: "", message: "" });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log(formData);
+    const success = await sendEmail(formData);
+
+    if (success) {
+      Swal.fire({
+        title: "Message Sent!",
+        text: "Thank you for getting in touch.",
+        icon: "success",
+        confirmButtonText: "Continue"
+      }).then(() => {
+        setFormData({ email: "", message: "" });
+      });
+    } else {
+      Swal.fire({
+        title: "Whoops!",
+        text: "An error has occurred. Please try again.",
+        icon: "error",
+      });
+    }
   };
 
   return (
@@ -39,7 +58,7 @@ const Contact = () => {
         className="flex flex-col mt-8 gap-y-4 md:text-lg lg:text-2xl sm:mx-auto sm:w-4/5 md:w-full lg:w-4/5 2xl:w-3/4"
       >
         <input
-          type="email"
+          // type="email"
           value={formData.email}
           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
           required

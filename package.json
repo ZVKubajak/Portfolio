@@ -16,6 +16,8 @@
     "motion": "^12.0.11",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "resend": "^4.1.2",
+    "sweetalert2": "^11.16.0",
     "tailwindcss": "^4.0.3"
   },
   "devDependencies": {
