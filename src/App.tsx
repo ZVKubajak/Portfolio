@@ -5,6 +5,7 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./layout/Footer";
+import ThemeSwitch from "./components/ThemeSwitch";
 
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
       </main>
 
       <Footer />
+
+      <ThemeSwitch />
     </>
   );
 }
