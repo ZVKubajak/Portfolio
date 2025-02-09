@@ -36,7 +36,7 @@ const OtherProject = () => {
           {otherProjects.map((project, index) => (
             <div
               key={index}
-              className="flex-[0_0_100%] min-w-0 bg-gray-100 hover:bg-gray-200 transition border border-gray-200 rounded-xl flex flex-col"
+              className="flex-[0_0_100%] min-w-0 bg-gray-100 hover:bg-gray-200 transition border border-gray-200 rounded-xl flex flex-col dark:bg-zinc-900 dark:hover:bg-zinc-800 dark:border-gray-700"
             >
               <img src={project.image} className="rounded-t-xl" />
 

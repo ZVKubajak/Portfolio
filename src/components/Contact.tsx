@@ -44,13 +44,13 @@ const Contact = () => {
     >
       <SectionHeading>Contact Me</SectionHeading>
 
-      <p className="mt-4 md:mt-6 lg:mt-8 text-gray-700 text-[15px] md:text-lg lg:text-xl">
+      <p className="mt-4 md:mt-6 lg:mt-8 text-gray-700 text-[15px] md:text-lg lg:text-xl dark:text-gray-200">
         Contact me directly at{" "}
         <a
           href="mailto:zvkubajak@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="underline underline-offset-2"
+          className="underline underline-offset-2 dark:text-white"
         >
           zvkubajak@gmail.com
         </a>{" "}
@@ -68,7 +68,7 @@ const Contact = () => {
           required
           maxLength={100}
           placeholder="Email"
-          className="bg-white border border-gray-200 rounded-lg px-2 py-1.5"
+          className="bg-white border border-gray-200 rounded-lg px-2 py-1.5 dark:bg-gray-950 dark:border-gray-700"
         />
 
         <textarea
@@ -80,12 +80,12 @@ const Contact = () => {
           minLength={10}
           maxLength={1000}
           placeholder="Message"
-          className="resize-none h-32 lg:h-40 bg-white border border-gray-200 rounded-lg px-2 py-1.5"
+          className="resize-none h-32 lg:h-40 bg-white border border-gray-200 rounded-lg px-2 py-1.5 dark:bg-gray-950 dark:border-gray-700"
         />
 
         <button
           type="submit"
-          className="flex justify-center group bg-slate-900 hover:bg-slate-950 text-slate-50 rounded-full text-xl md:text-2xl 2xl:text-3xl w-32 md:w-40 2xl:w-48 gap-x-2 py-1 md:py-1.5 2xl:py-2 cursor-pointer outline-none hover:scale-110 active:scale-95 transition"
+          className="flex justify-center group bg-slate-900 hover:bg-slate-950 text-slate-50 rounded-full text-xl md:text-2xl 2xl:text-3xl w-32 md:w-40 2xl:w-48 gap-x-2 py-1 md:py-1.5 2xl:py-2 cursor-pointer outline-none hover:scale-110 active:scale-95 transition dark:bg-zinc-950 dark:text-white dark:hover:bg-zinc-900 dark:border dark:border-gray-700"
         >
           {isSubmitting ? (
             <>Submitting...</>
