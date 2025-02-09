@@ -18,7 +18,10 @@ const Intro = () => {
   }
 
   return (
-    <section className="flex flex-col items-center space-y-8 2xl:space-y-12 mx-8 md:mx-28 lg:mx-56 xl:mx-80">
+    <section
+      id="intro"
+      className="scroll-mt-32 flex flex-col items-center space-y-8 2xl:space-y-12 mx-8 md:mx-28 lg:mx-56 xl:mx-80"
+    >
       <div className="relative">
         <motion.div
           initial={{ opacity: 0, scale: 0 }}
