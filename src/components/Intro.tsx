@@ -1,9 +1,11 @@
 import { motion } from "motion/react";
-import { MoveRight } from "lucide-react";
-import { Download } from "lucide-react";
-import { Github } from "lucide-react";
-import { Linkedin } from "lucide-react";
-import { ChevronDown } from "lucide-react";
+import {
+  MoveRight,
+  Download,
+  Github,
+  Linkedin,
+  ChevronDown,
+} from "lucide-react";
 
 const Intro = () => {
   const date = new Date();

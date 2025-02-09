@@ -1,8 +1,7 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "motion/react";
 import { projects } from "../lib/projects";
-import { Monitor } from "lucide-react";
-import { Github } from "lucide-react";
+import { Monitor, Github } from "lucide-react";
 
 type ProjectProps = (typeof projects)[number];
 

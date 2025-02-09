@@ -1,10 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { otherProjects } from "../lib/projects";
-import { Monitor } from "lucide-react";
-import { Github } from "lucide-react";
-import { ChevronLeft } from "lucide-react";
-import { ChevronRight } from "lucide-react";
+import { Monitor, Github, ChevronLeft, ChevronRight } from "lucide-react";
 
 const OtherProject = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel();
