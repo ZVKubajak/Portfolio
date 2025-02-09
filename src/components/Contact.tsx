@@ -7,10 +7,13 @@ import { Send } from "lucide-react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({ email: "", message: "" });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
     const success = await sendEmail(formData);
+    setIsSubmitting(false);
 
     if (success) {
       Swal.fire({
@@ -81,13 +84,19 @@ const Contact = () => {
 
         <button
           type="submit"
-          className="flex group bg-slate-900 hover:bg-slate-950 text-slate-50 rounded-full text-xl md:text-2xl 2xl:text-3xl w-26 2xl:w-41 md:w-29.5 gap-x-2 px-5 py-1 cursor-pointer outline-none focus:scale-110 hover:scale-110 active:scale-105 transition"
+          className="flex justify-center group bg-slate-900 hover:bg-slate-950 text-slate-50 rounded-full text-xl md:text-2xl 2xl:text-3xl w-32 md:w-40 2xl:w-48 gap-x-2 py-1 md:py-1.5 2xl:py-2 cursor-pointer outline-none hover:scale-110 active:scale-95 transition"
         >
-          Submit
-          <Send
-            size={20}
-            className="hidden 2xl:block opacity-75 mt-2.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition"
-          />
+          {isSubmitting ? (
+            <>Submitting...</>
+          ) : (
+            <>
+              Submit
+              <Send
+                size={24}
+                className="hidden 2xl:block opacity-75 mt-2.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition"
+              />
+            </>
+          )}
         </button>
       </form>
     </motion.section>
