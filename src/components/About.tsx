@@ -23,8 +23,8 @@ const About = () => {
         </span>
         . I enjoy{" "}
         <span className="font-bold">
-          breaking down complex problems, handling errors, and finding elegant
-          solutions
+          developing backend logic and handling errors, but also love styling
+          with TailwindCSS
         </span>
         . Always eager to improve, I'm currently diving deeper into{" "}
         <span className="underline underline-offset-2">
