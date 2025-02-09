@@ -15,7 +15,10 @@ const Skills = () => {
   };
 
   return (
-    <section className="mt-28 mx-auto w-4/5 md:w-3/5 xl:w-1/2 text-center">
+    <section
+      id="skills"
+      className="scroll-mt-32 mt-28 mx-auto w-4/5 md:w-3/5 xl:w-1/2 text-center"
+    >
       <SectionHeading>My Skills</SectionHeading>
 
       <ul className="flex flex-wrap justify-center gap-2 md:gap-x-3 lg:gap-x-4 2xl:gap-y-3 mt-12 2xl:mt-16">

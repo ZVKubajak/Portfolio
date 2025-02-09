@@ -4,7 +4,8 @@ import { motion } from "motion/react";
 const About = () => {
   return (
     <motion.section
-      className="mt-20 mx-12 sm:mx-20 space-y-8 text-center"
+      id="about"
+      className="scroll-mt-32 mt-20 mx-12 sm:mx-20 space-y-8 text-center"
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ delay: 0.7 }}
@@ -22,8 +23,8 @@ const About = () => {
         </span>
         . I enjoy{" "}
         <span className="font-bold">
-          breaking down complex problems, handling errors, and finding elegant
-          solutions
+          developing backend logic and handling errors, but also love styling
+          with TailwindCSS
         </span>
         . Always eager to improve, I'm currently diving deeper into{" "}
         <span className="underline underline-offset-2">

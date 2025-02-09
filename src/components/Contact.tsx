@@ -35,11 +35,12 @@ const Contact = () => {
 
   return (
     <motion.section
+      id="contact"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
       viewport={{ once: true }}
-      className="mb-20 mt-28 mx-auto w-4/5 md:w-3/5 xl:w-1/2 text-center"
+      className="scroll-mt-32 mb-20 mt-28 mx-auto w-4/5 md:w-3/5 xl:w-1/2 text-center"
     >
       <SectionHeading>Contact Me</SectionHeading>
 
