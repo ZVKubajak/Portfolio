@@ -5,7 +5,7 @@ dotenv.config();
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export default async function handler(req, res) {
+export const handler = async (req: any, res: any) => {
   const { email, message } = req.body;
 
   try {
@@ -27,4 +27,4 @@ export default async function handler(req, res) {
     console.error("Server Error:", error);
     return res.status(500).json({ error: "Server Error" });
   }
-}
+};
