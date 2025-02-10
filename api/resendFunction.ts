@@ -5,7 +5,7 @@ dotenv.config();
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export const handler = async (req, res) => {
+export default async function handler(req, res) {
   const { email, message } = req.body;
 
   try {
