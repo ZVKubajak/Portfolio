@@ -34,8 +34,8 @@ const Intro = () => {
           }}
         >
           <img
-            src="https://ui-avatars.com/api/?name=John+Doe"
-            className="border-4 border-white shadow-xl rounded-full size-28"
+            src="../../public/me.jpg"
+            className="border-4 border-white shadow-xl rounded-full size-28 dark:border-gray-800"
           />
         </motion.div>
 
