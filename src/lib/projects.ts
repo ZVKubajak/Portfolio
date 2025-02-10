@@ -1,11 +1,11 @@
-import stellabytePNG from "../../public/stellabyte.png";
-import codeBountyPNG from "../../public/code-bounty.png";
-import digbiAIPNG from "../../public/digbi-ai.png";
-import lifeguardRTPNG from "../../public/lifeguard-rt.png";
-import quotefulPNG from "../../public/quoteful.png";
-import bookPagePNG from "../../public/book-page.png";
-import employeeTrackerPNG from "../../public/employee-tracker.png";
-import cashGuardianPNG from "../../public/cash-guardian.png";
+import stellabytePNG from "../assets/stellabyte.png";
+import codeBountyPNG from "../assets/code-bounty.png";
+import digbiAIPNG from "../assets/digbi-ai.png";
+import lifeguardRTPNG from "../assets/lifeguard-rt.png";
+import quotefulPNG from "../assets/quoteful.png";
+import bookPagePNG from "../assets/book-page.png";
+import employeeTrackerPNG from "../assets/employee-tracker.png";
+import cashGuardianPNG from "../assets/cash-guardian.png";
 
 export const projects = [
   {
