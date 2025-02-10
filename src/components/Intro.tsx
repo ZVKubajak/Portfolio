@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import mePNG from "../assets/me.png";
 import {
   MoveRight,
   Download,
@@ -34,7 +35,8 @@ const Intro = () => {
           }}
         >
           <img
-            src="../../public/me.jpg"
+            src={mePNG}
+            alt="Profile Picture"
             className="border-4 border-white shadow-xl rounded-full size-28 dark:border-gray-800"
           />
         </motion.div>
