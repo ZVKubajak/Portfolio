@@ -17,18 +17,25 @@ const Contact = () => {
 
     if (success) {
       Swal.fire({
-        titleText: "Message Sent!",
         icon: "success",
+        titleText: "Message Sent",
+        text: "Thanks for getting in touch!",
+        background: "#1D293D",
+        color: "#FFF",
         confirmButtonText: "Continue",
+        confirmButtonColor: "#00BC7D",
       }).then(() => {
         setFormData({ email: "", message: "" });
       });
     } else {
       Swal.fire({
+        icon: "error",
         titleText: "Whoops!",
         text: "An error has occurred. Please try again.",
-        icon: "error",
+        background: "#1D293D",
+        color: "#FFF",
         confirmButtonText: "Continue",
+        confirmButtonColor: "#00BC7D",
       });
     }
   };
