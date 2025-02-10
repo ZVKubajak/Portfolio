@@ -4,10 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "vite",
+    "start": "vite preview --port $PORT",
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "railway-build": "npm install && npm run build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
