@@ -1,10 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { otherProjects } from "../lib/projects";
-import { Monitor } from "lucide-react";
-import { Github } from "lucide-react";
-import { ChevronLeft } from "lucide-react";
-import { ChevronRight } from "lucide-react";
+import { Monitor, Github, ChevronLeft, ChevronRight } from "lucide-react";
 
 const OtherProject = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel();
@@ -39,7 +36,7 @@ const OtherProject = () => {
           {otherProjects.map((project, index) => (
             <div
               key={index}
-              className="flex-[0_0_100%] min-w-0 bg-gray-100 hover:bg-gray-200 transition border border-gray-200 rounded-xl flex flex-col"
+              className="flex-[0_0_100%] min-w-0 bg-gray-100 hover:bg-gray-200 transition border border-gray-200 rounded-xl flex flex-col dark:bg-zinc-900 dark:hover:bg-zinc-800 dark:border-gray-700"
             >
               <img src={project.image} className="rounded-t-xl" />
 

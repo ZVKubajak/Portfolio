@@ -1,8 +1,7 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "motion/react";
 import { projects } from "../lib/projects";
-import { Monitor } from "lucide-react";
-import { Github } from "lucide-react";
+import { Monitor, Github } from "lucide-react";
 
 type ProjectProps = (typeof projects)[number];
 
@@ -32,7 +31,7 @@ const Project = ({
       }}
       className="group mb-4 md:mb-8 last:mb-0"
     >
-      <article className="relative xl:w-[640px] xl:h-[320px] bg-gray-100 hover:bg-gray-200 transition border border-gray-200 rounded-xl text-left overflow-hidden mx-auto">
+      <article className="relative xl:w-[640px] xl:h-[320px] bg-gray-100 hover:bg-gray-200 transition border border-gray-200 rounded-xl text-left overflow-hidden mx-auto dark:bg-zinc-900 dark:hover:bg-zinc-800 dark:border-gray-700">
         <div className="flex flex-col h-full xl:w-1/2 px-5 py-8 group-even:float-right">
           <div className="flex">
             <h3 className="text-2xl font-semibold">{name}</h3>
@@ -63,7 +62,7 @@ const Project = ({
             </div>
           </div>
 
-          <p className="leading-snug sm:leading-normal mt-2 lg:mb-4 text-gray-700">
+          <p className="leading-snug sm:leading-normal mt-2 lg:mb-4 text-gray-700 dark:text-inherit">
             {description}
           </p>
 
