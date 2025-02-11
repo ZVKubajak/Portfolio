@@ -12,8 +12,8 @@ const Footer = () => {
       <div className="text-sm md:text-base mb-4 sm:mb-6 lg:mb-8 sm:mx-auto sm:w-[350px] md:w-full sm:space-y-2 md:space-y-0">
         <p>© 2025 Zander Kubajak. All rights reserved.</p>
         <p className="hidden sm:block">
-          Built with React, TypeScript, TailwindCSS, Framer Motion, Resend,
-          Embla, Lucide, and SweetAlert2.
+          Built with React, TypeScript, TailwindCSS, Framer Motion, Embla,
+          Lucide, SweetAlert2, and Web3Forms.
         </p>
       </div>
     </footer>

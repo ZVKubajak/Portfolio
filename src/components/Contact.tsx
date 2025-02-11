@@ -1,5 +1,4 @@
 import SectionHeading from "./SectionHeading";
-import sendEmail from "../services/sendEmail";
 import Swal from "sweetalert2";
 import { useState } from "react";
 import { motion } from "motion/react";
@@ -11,23 +10,43 @@ const Contact = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
-    const success = await sendEmail(formData);
-    setIsSubmitting(false);
 
-    if (success) {
-      Swal.fire({
-        icon: "success",
-        titleText: "Message Sent",
-        text: "Thanks for getting in touch!",
-        background: "#1D293D",
-        color: "#FFF",
-        confirmButtonText: "Continue",
-        confirmButtonColor: "#00BC7D",
-      }).then(() => {
-        setFormData({ email: "", message: "" });
+    try {
+      setIsSubmitting(true);
+
+      const web3Form = new FormData();
+      web3Form.append("access_key", "985c671f-072e-4140-9d08-87d707cdc162");
+      web3Form.append("subject", "Message From Your Portfolio");
+      web3Form.append("message", formData.message);
+      web3Form.append("replyto", formData.email);
+
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: web3Form,
       });
-    } else {
+
+      const data = await response.json();
+      setIsSubmitting(false);
+
+      if (data.success) {
+        Swal.fire({
+          icon: "success",
+          titleText: "Message Sent",
+          text: "Thanks for getting in touch!",
+          background: "#1D293D",
+          color: "#FFF",
+          confirmButtonText: "Continue",
+          confirmButtonColor: "#00BC7D",
+        }).then(() => {
+          setFormData({ email: "", message: "" });
+        });
+      } else {
+        throw Error;
+      }
+    } catch (error) {
+      console.error("handleSubmit Error:", error);
+      setIsSubmitting(false);
+
       Swal.fire({
         icon: "error",
         titleText: "Whoops!",

@@ -7,13 +7,7 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   base: "/",
   server: {
-    open: false,
+    open: true,
     port: 3000,
-    proxy: {
-      "/api": {
-        changeOrigin: true,
-        secure: false,
-      },
-    },
   },
 });
