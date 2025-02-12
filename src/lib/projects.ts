@@ -22,7 +22,7 @@ export const projects = [
       "Tailwind",
     ],
     image: stellabytePNG,
-    site: "",
+    site: "https://stellabyte-production.up.railway.app",
     link: "https://github.com/ZVKubajak/Stellabyte",
   },
   {
@@ -38,7 +38,7 @@ export const projects = [
       "React Bootstrap",
     ],
     image: codeBountyPNG,
-    site: "",
+    site: "https://codebounty-production.up.railway.app",
     link: "https://github.com/ZVKubajak/codeBounty",
   },
   {
@@ -47,7 +47,7 @@ export const projects = [
       "Innovative text-to-video (TTV) chatbot powered by the OpenAI and D-ID APIs. When given a JSON file and prompt, it returns a video of the selected face speaking the AI generated response.",
     technologies: ["React", "TypeScript", "JWT", "PSQL", "AWS S3", "OpenAI"],
     image: digbiAIPNG,
-    site: "",
+    site: "https://www.digbiai.com",
     link: "https://github.com/ZVKubajak/Digbi-AI",
   },
   {
@@ -56,7 +56,7 @@ export const projects = [
       "Frontend application designed to track lifeguard rotations. This is my first ever project, and it was used and commended by my coworkers in the summer of 2024.",
     technologies: ["HTML", "CSS", "JavaScript"],
     image: lifeguardRTPNG,
-    site: "",
+    site: "https://zvkubajak.github.io/Lifeguard-Rotation-Tracker",
     link: "https://github.com/ZVKubajak/Lifeguard-Rotation-Tracker",
   },
 ] as const;
@@ -75,7 +75,7 @@ export const otherProjects = [
       "OpenAI",
     ],
     image: quotefulPNG,
-    site: "",
+    site: "https://quoteful-production.up.railway.app",
     link: "https://github.com/ZVKubajak/Quoteful",
   },
   {
@@ -91,7 +91,7 @@ export const otherProjects = [
       "Google Books API",
     ],
     image: bookPagePNG,
-    site: "",
+    site: "https://book-page-production.up.railway.app",
     link: "https://github.com/ZVKubajak/book-page",
   },
   {
@@ -100,7 +100,7 @@ export const otherProjects = [
       "CLI application for a SQL database that keeps track of departments, roles, managers, and employees.",
     technologies: ["PSQL", "TypeScript", "Inquirer"],
     image: employeeTrackerPNG,
-    site: "",
+    site: "https://github.com/ZVKubajak/employee-tracker",
     link: "https://github.com/ZVKubajak/employee-tracker",
   },
   {
@@ -109,7 +109,7 @@ export const otherProjects = [
       "Finance tracker that watches monthly income and expenses using responsive charts to display data. My first group project.",
     technologies: ["HTML", "CSS", "Bootstrap", "JavaScript", "Chart.js"],
     image: cashGuardianPNG,
-    site: "",
+    site: "https://zvkubajak.github.io/cash-guardian",
     link: "https://github.com/ZVKubajak/cash-guardian",
   },
 ] as const;
