@@ -121,7 +121,7 @@ const Intro = () => {
             rel="noopener noreferrer"
             className="outline-none"
           >
-            <button className="rounded-full bg-slate-50 text-neutral-900 p-2.5 border-2 border-gray-200 hover:bg-black hover:text-white hover:scale-105 active:scale-95 transition dark:bg-slate-900 dark:text-slate-50 dark:border-gray-700">
+            <button className="rounded-full bg-slate-50 text-neutral-900 p-2.5 border-2 border-gray-200 hover:bg-gray-950 hover:text-white hover:scale-105 active:scale-95 transition dark:bg-slate-900 dark:text-slate-50 dark:border-gray-700">
               <Github size={28} />
             </button>
           </a>

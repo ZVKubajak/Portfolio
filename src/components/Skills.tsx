@@ -26,7 +26,7 @@ const Skills = () => {
           <a href={skill.link} target="_blank" rel="noopener noreferrer">
             <motion.li
               key={index}
-              className="flex border shadow-sm sm:shadow-md border-gray-500 rounded-lg bg-amber-100/15 text-gray-800 text-lg 2xl:text-xl px-3 sm:px-4 md:px-3 py-1 sm:py-2 lg:py-2.5 2xl:py-3 dark:bg-gray-950 dark:text-sky-50 dark:border-gray-700 hover:border-white transition-colors duration-200"
+              className="flex border shadow-sm sm:shadow-md border-gray-500 rounded-lg bg-amber-100/15 text-gray-800 text-lg 2xl:text-xl px-3 py-1 sm:py-2 lg:py-2.5 2xl:py-3 dark:bg-gray-950 dark:text-sky-50 dark:border-gray-700 hover:border-white transition-colors duration-200"
               variants={fadeInAnimationVariants}
               initial="initial"
               whileInView="animate"
