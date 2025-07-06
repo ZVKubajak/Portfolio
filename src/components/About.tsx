@@ -13,28 +13,30 @@ const About = () => {
       <SectionHeading>About Me</SectionHeading>
 
       <p className="text-xl xl:text-xl/10 2xl:text-2xl/10 md:mx-auto md:w-3/4 lg:w-1/2">
-        <span className="italic">With over a year of experience</span>, I've
-        built multiple full-stack websites using modern tools such as{" "}
-        <span className="underline underline-offset-2">React and Prisma</span>.
-        I focus on writing clean, understandable code while maintaining type
-        safety with{" "}
-        <span className="underline underline-offset-2">
-          TypeScript, Zod, and React Hook Form
-        </span>
-        . I enjoy{" "}
         <span className="font-bold">
-          developing backend logic and handling errors, but also love styling
-          with TailwindCSS
-        </span>
-        . Always eager to improve, I'm currently diving deeper into{" "}
-        <span className="underline underline-offset-2">
-          Next.js and Framer Motion
-        </span>
-        . I’m looking for a web developer role where I can{" "}
-        <span className="font-bold">
-          continue growing and building great applications
-        </span>
-        .
+          With over a year of hands-on experience
+        </span>{" "}
+        and currently contracting at{" "}
+        <a
+          className="underline"
+          href="https://www.linkedin.com/company/green-tea-technology/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Green Tea Technology
+        </a>
+        , I've contributed to a range of projects—including full-stack web apps,
+        mobile applications, and retrieval-augmented generation (RAG) chatbots.
+        I specialize in writing clean, robust backend code with a strong
+        emphasis on type safety, but I’m equally comfortable working on the
+        frontend—building smooth client-side logic and styling interfaces with
+        care. <span className="font-bold">I also work an an AI integrator</span>
+        , with experience building multiple custom chatbots and integrating AI
+        features into real-world applications. I’ve even worked on training
+        lightweight AI models for client-specific use cases. I'm now{" "}
+        <span className="font-bold">looking for a full-time position</span>{" "}
+        where I can grow, collaborate with a team, and build applications that
+        make an impact.
       </p>
     </motion.section>
   );
