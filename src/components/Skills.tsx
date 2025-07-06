@@ -23,17 +23,24 @@ const Skills = () => {
 
       <ul className="flex flex-wrap justify-center gap-2 md:gap-x-3 lg:gap-x-4 2xl:gap-y-3 mt-12 2xl:mt-16">
         {skills.map((skill, index) => (
-          <motion.li
-            key={index}
-            className="border shadow-sm sm:shadow-md border-gray-500 rounded-lg bg-amber-100/15 text-gray-800 text-lg 2xl:text-xl px-3 sm:px-4 md:px-5 py-1 sm:py-2 lg:py-2.5 2xl:py-3 dark:bg-gray-950 dark:text-sky-50 dark:border-gray-700"
-            variants={fadeInAnimationVariants}
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-            custom={index}
-          >
-            {skill}
-          </motion.li>
+          <a href={skill.link} target="_blank" rel="noopener noreferrer">
+            <motion.li
+              key={index}
+              className="flex border shadow-sm sm:shadow-md border-gray-500 rounded-lg bg-amber-100/15 text-gray-800 text-lg 2xl:text-xl px-3 sm:px-4 md:px-3 py-1 sm:py-2 lg:py-2.5 2xl:py-3 dark:bg-gray-950 dark:text-sky-50 dark:border-gray-700 hover:border-white transition-colors duration-200"
+              variants={fadeInAnimationVariants}
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true }}
+              custom={index}
+            >
+              <skill.icon
+                size={24}
+                color={skill.color}
+                className="mt-0.75 mr-2"
+              />
+              {skill.text}
+            </motion.li>
+          </a>
         ))}
       </ul>
     </section>
