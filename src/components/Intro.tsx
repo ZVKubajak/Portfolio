@@ -65,12 +65,11 @@ const Intro = () => {
         }}
       >
         Hey, I'm Zander! 👋 I am a{" "}
-        <span className="font-semibold">full-stack web developer</span>{" "}
+        <span className="font-semibold">web developer and AI integrator</span>{" "}
         specializing in{" "}
         <span className="font-semibold">
-          TypeScript, React, TailwindCSS, Prisma,
-        </span>{" "}
-        and more.
+          TypeScript, React, Express, Prisma, and Aerospike.
+        </span>
       </motion.p>
 
       <motion.p
@@ -82,13 +81,15 @@ const Intro = () => {
         }}
       >
         {greeting}! My name is Zander, and I am a{" "}
-        <span className="font-semibold">full-stack web developer</span>. I
-        specialize in{" "}
         <span className="font-semibold">
-          TypeScript, React, TailwindCSS, Prisma,
+          full-stack web developer and AI integrator
+        </span>
+        . I specialize in{" "}
+        <span className="font-semibold">
+          TypeScript, React, Express, Prisma, and Aerospike.
         </span>{" "}
-        and more. Creating{" "}
-        <span className="italic">type-safe applications</span> is my passion.
+        Creating <span className="italic">type-safe applications</span> is my
+        passion.
       </motion.p>
 
       <motion.div
