@@ -16,7 +16,7 @@ const About = () => {
         <span className="font-bold">
           With over a year of hands-on experience
         </span>{" "}
-        and currently contracting at{" "}
+        and 6 months contracting at{" "}
         <a
           className="underline"
           href="https://www.linkedin.com/company/green-tea-technology/"
@@ -25,16 +25,20 @@ const About = () => {
         >
           Green Tea Technology
         </a>
-        , I've contributed to a range of projects—including full-stack web apps,
-        mobile applications, and retrieval-augmented generation (RAG) chatbots.
-        I specialize in writing clean, robust backend code with a strong
-        emphasis on type safety, but I’m equally comfortable working on the
-        frontend—building smooth client-side logic and styling interfaces with
-        care. <span className="font-bold">I also work an an AI integrator</span>
-        , with experience building multiple custom chatbots and integrating AI
-        features into real-world applications. I’ve even worked on training
-        lightweight AI models for client-specific use cases. I'm now{" "}
-        <span className="font-bold">looking for a full-time position</span>{" "}
+        , I've built production-ready websites, mobile apps, and AI systems. I
+        focus on practical backend features such as rate limiting with Redis,
+        JWT-based API auth, and cursor-based pagination, while also being
+        proficient with frontend development and Tailwind styling.
+        <br />
+        <br />
+        <span className="font-bold">I also work an an AI integrator</span>, with
+        experience building custom chatbots and integrating AI features into
+        real-world apps.
+        <br />
+        <br />
+        <span className="font-bold">
+          I'm now looking for a full-time position
+        </span>{" "}
         where I can grow, collaborate with a team, and build applications that
         make an impact.
       </p>

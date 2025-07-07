@@ -64,12 +64,8 @@ const Intro = () => {
           delay: 0.5,
         }}
       >
-        Hey, I'm Zander! 👋 I am a{" "}
-        <span className="font-semibold">web developer and AI integrator</span>{" "}
-        specializing in{" "}
-        <span className="font-semibold">
-          TypeScript, React, Express, Prisma, and Aerospike.
-        </span>
+        Hey, I'm Zander! 👋 I am a full-stack developer and AI integrator{" "}
+        specializing in building fast, type-safe systems that scale.
       </motion.p>
 
       <motion.p
@@ -80,15 +76,13 @@ const Intro = () => {
           delay: 0.5,
         }}
       >
-        {greeting}! My name is Zander, and I am a{" "}
+        {greeting}! My name is Zander, a{" "}
         <span className="font-semibold">
-          full-stack web developer and AI integrator
+          full-stack developer and AI integrator
         </span>
-        . I specialize in{" "}
-        <span className="font-semibold">
-          TypeScript, React, Express, Prisma, and Aerospike.
-        </span>{" "}
-        Creating <span className="italic">type-safe applications</span> is my
+        . I specialize in crafting real-world applications with custom backend
+        logic and AI-powered features. Building{" "}
+        <span className="italic">fast, type-safe systems that scale</span> is my
         passion.
       </motion.p>
 
