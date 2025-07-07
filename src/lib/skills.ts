@@ -6,6 +6,8 @@ import {
   FaReact,
   FaRocket,
   FaAws,
+  FaGitAlt,
+  FaDocker,
   FaDigitalOcean,
   FaPython,
 } from "react-icons/fa";
@@ -19,9 +21,12 @@ import {
   SiPrisma,
   SiAerospike,
   SiRedis,
+  SiReactquery,
   SiTailwindcss,
+  SiExpo,
   SiHuggingface,
 } from "react-icons/si";
+import { RiBearSmileFill } from "react-icons/ri";
 
 type Skill = {
   icon: IconType;
@@ -128,10 +133,40 @@ const skills: Skill[] = [
     link: "https://www.digitalocean.com",
   },
   {
+    icon: FaGitAlt,
+    color: "#F05133",
+    text: "Git",
+    link: "https://git-scm.com",
+  },
+  {
+    icon: FaDocker,
+    color: "#1C63EC",
+    text: "Docker",
+    link: "https://www.docker.com",
+  },
+  {
+    icon: RiBearSmileFill,
+    color: "#463F39",
+    text: "Zustand",
+    link: "https://zustand-demo.pmnd.rs",
+  },
+  {
+    icon: SiReactquery,
+    color: "#FFD824",
+    text: "Tanstack",
+    link: "https://tanstack.com",
+  },
+  {
     icon: SiTailwindcss,
     color: "#00BCFF",
     text: "Tailwind",
     link: "https://tailwindcss.com",
+  },
+  {
+    icon: SiExpo,
+    color: "#EDEEF0",
+    text: "Expo",
+    link: "https://docs.expo.dev",
   },
   {
     icon: SiHuggingface,

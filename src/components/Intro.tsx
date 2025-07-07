@@ -102,10 +102,12 @@ const Intro = () => {
             </button>
           </a>
 
-          <button className="group flex rounded-full bg-slate-50 text-neutral-900 text-2xl lg:text-xl xl:text-2xl px-4 py-1.5 mx-auto sm:mb-1 sm:mx-2 lg:mx-0.5 xl:mx-1 2xl:mx-1.5 cursor-pointer border-2 border-gray-200 outline-none focus:scale-110 hover:scale-110 active:scale-105 transition dark:bg-slate-900 dark:text-slate-50 dark:border-gray-700">
-            Download Resume{" "}
-            <Download className="opacity-75 mt-1 ml-2 group-hover:translate-y-1 transition" />
-          </button>
+          <a href="/resume.pdf" download>
+            <button className="group flex rounded-full bg-slate-50 text-neutral-900 text-2xl lg:text-xl xl:text-2xl px-4 py-1.5 mx-auto sm:mb-1 sm:mx-2 lg:mx-0.5 xl:mx-1 2xl:mx-1.5 cursor-pointer border-2 border-gray-200 outline-none focus:scale-110 hover:scale-110 active:scale-105 transition dark:bg-slate-900 dark:text-slate-50 dark:border-gray-700">
+              Download Resume{" "}
+              <Download className="opacity-75 mt-1 ml-2 group-hover:translate-y-1 transition" />
+            </button>
+          </a>
         </div>
 
         <div className="flex justify-center space-x-4 lg:space-x-1 2xl:space-x-2 lg:mb-2">
