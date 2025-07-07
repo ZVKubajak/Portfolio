@@ -3,7 +3,16 @@ import ragChatbotPNG from "../assets/rag-chatbot.png";
 import stellabytePNG from "../assets/stellabyte.png";
 import lifeguardRTPNG from "../assets/lifeguard-rt.png";
 
-export const projects = [
+type Project = {
+  name: string;
+  description: string;
+  technologies: string[];
+  image: string;
+  site: string;
+  link: string;
+};
+
+export const projects: Project[] = [
   {
     name: "Byte Club",
     description:
@@ -42,11 +51,11 @@ export const projects = [
   },
 ] as const;
 
-export const otherProjects = [
+export const otherProjects: Project[] = [
   {
     name: "Stellabyte",
     description:
-      "Stellabyte is a cloud storage platform built on Amazon S3 for scalable storage and Prisma ORM for efficient database management, combining cutting-edge technology with a celestial aesthetic.",
+      "Stellabyte is a cloud storage platform built on Amazon S3 and Prisma + MongoDB. User's can store files while turning them into artwork with a celestial aesthetic.",
     technologies: [
       "TypeScript",
       "React",
@@ -63,7 +72,7 @@ export const otherProjects = [
   {
     name: "Lifeguard RT",
     description:
-      "Frontend application designed to track lifeguard rotations. This is my first ever project, and it was used and commended by my coworkers in the summer of 2024.",
+      "Frontend application leveraging local storage for tracking lifeguard rotations on the job. This was my first ever project released in July 2024, and it was used and commended by pool supervisors when I worked as a lifeguard.",
     technologies: ["HTML", "CSS", "JavaScript"],
     image: lifeguardRTPNG,
     site: "https://zvkubajak.github.io/Lifeguard-Rotation-Tracker/",

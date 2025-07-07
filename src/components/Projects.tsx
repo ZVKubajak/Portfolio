@@ -24,7 +24,7 @@ const Projects = () => {
         ))}
       </div>
 
-      <div className="hidden xl:block">
+      <div className="hidden lg:block">
         <h2 className="mt-16 text-2xl xl:text-3xl 2xl:text-4xl">
           Other Projects
         </h2>
