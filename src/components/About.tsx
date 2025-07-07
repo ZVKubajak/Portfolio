@@ -13,28 +13,34 @@ const About = () => {
       <SectionHeading>About Me</SectionHeading>
 
       <p className="text-xl xl:text-xl/10 2xl:text-2xl/10 md:mx-auto md:w-3/4 lg:w-1/2">
-        <span className="italic">With over a year of experience</span>, I've
-        built multiple full-stack websites using modern tools such as{" "}
-        <span className="underline underline-offset-2">React and Prisma</span>.
-        I focus on writing clean, understandable code while maintaining type
-        safety with{" "}
-        <span className="underline underline-offset-2">
-          TypeScript, Zod, and React Hook Form
-        </span>
-        . I enjoy{" "}
         <span className="font-bold">
-          developing backend logic and handling errors, but also love styling
-          with TailwindCSS
-        </span>
-        . Always eager to improve, I'm currently diving deeper into{" "}
-        <span className="underline underline-offset-2">
-          Next.js and Framer Motion
-        </span>
-        . I’m looking for a web developer role where I can{" "}
+          With over a year of hands-on experience
+        </span>{" "}
+        and 6 months contracting at{" "}
+        <a
+          className="underline"
+          href="https://www.linkedin.com/company/green-tea-technology/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Green Tea Technology
+        </a>
+        , I've built production-ready websites, mobile apps, and AI systems. I
+        focus on practical backend features such as rate limiting with Redis,
+        JWT-based API auth, and cursor-based pagination, while also being
+        proficient with frontend development and Tailwind styling.
+        <br />
+        <br />
+        <span className="font-bold">I also work an an AI integrator</span>, with
+        experience building custom chatbots and integrating AI features into
+        real-world apps.
+        <br />
+        <br />
         <span className="font-bold">
-          continue growing and building great applications
-        </span>
-        .
+          I'm now looking for a full-time position
+        </span>{" "}
+        where I can grow, collaborate with a team, and build applications that
+        make an impact.
       </p>
     </motion.section>
   );

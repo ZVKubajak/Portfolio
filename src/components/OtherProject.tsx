@@ -93,7 +93,7 @@ const OtherProject = () => {
       <div className="flex ml-[132px] mt-3 space-x-2">
         <button
           onClick={prev}
-          className={`border rounded-full ${
+          className={`border rounded-full cursor-pointer ${
             count === 1 ? "text-gray-500" : "text-inherit"
           } transition`}
         >
@@ -101,14 +101,14 @@ const OtherProject = () => {
         </button>
         <button
           onClick={next}
-          className={`border rounded-full ${
-            count === 4 ? "text-gray-500" : "text-inherit"
+          className={`border rounded-full cursor-pointer ${
+            count === 2 ? "text-gray-500" : "text-inherit"
           } transition`}
         >
           <ChevronRight size={28} />
         </button>
 
-        <div className="ml-[228px] text-xl font-semibold">{count}/4</div>
+        <div className="ml-[228px] text-xl font-semibold">{count}/2</div>
       </div>
     </article>
   );

@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "motion/react";
 import { projects } from "../lib/projects";
-import { Monitor, Github } from "lucide-react";
+import { Monitor, Github, Files } from "lucide-react";
 
 type ProjectProps = (typeof projects)[number];
 
@@ -37,28 +37,44 @@ const Project = ({
             <h3 className="text-2xl font-semibold">{name}</h3>
 
             <div className="flex mt-1">
-              <a
-                href={site}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="outline-none focus:scale-110"
-              >
-                <Monitor
-                  size={24}
-                  className="ml-4 cursor-pointer outline-none hover:scale-110 active:scale-90 transition"
-                />
-              </a>
-              <a
-                href={link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="outline-none focus:scale-110"
-              >
-                <Github
-                  size={24}
-                  className="ml-2 cursor-pointer outline-none hover:scale-110 active-scale:90 transition"
-                />
-              </a>
+              {name === "Byte Club" ? (
+                <a
+                  href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="outline-none focus:scale-110"
+                >
+                  <Files
+                    size={24}
+                    className="ml-3 cursor-pointer outline-none hover:scale-110 active:scale-90 transition"
+                  />
+                </a>
+              ) : (
+                <>
+                  <a
+                    href={site}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="outline-none focus:scale-110"
+                  >
+                    <Monitor
+                      size={24}
+                      className="ml-4 cursor-pointer outline-none hover:scale-110 active:scale-90 transition"
+                    />
+                  </a>
+                  <a
+                    href={link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="outline-none focus:scale-110"
+                  >
+                    <Github
+                      size={24}
+                      className="ml-2 cursor-pointer outline-none hover:scale-110 active-scale:90 transition"
+                    />
+                  </a>
+                </>
+              )}
             </div>
           </div>
 

@@ -64,13 +64,8 @@ const Intro = () => {
           delay: 0.5,
         }}
       >
-        Hey, I'm Zander! 👋 I am a{" "}
-        <span className="font-semibold">full-stack web developer</span>{" "}
-        specializing in{" "}
-        <span className="font-semibold">
-          TypeScript, React, TailwindCSS, Prisma,
-        </span>{" "}
-        and more.
+        Hey, I'm Zander! 👋 I am a full-stack developer and AI integrator{" "}
+        specializing in building fast, type-safe systems that scale.
       </motion.p>
 
       <motion.p
@@ -81,14 +76,14 @@ const Intro = () => {
           delay: 0.5,
         }}
       >
-        {greeting}! My name is Zander, and I am a{" "}
-        <span className="font-semibold">full-stack web developer</span>. I
-        specialize in{" "}
+        {greeting}! My name is Zander, a{" "}
         <span className="font-semibold">
-          TypeScript, React, TailwindCSS, Prisma,
-        </span>{" "}
-        and more. Creating{" "}
-        <span className="italic">type-safe applications</span> is my passion.
+          full-stack developer and AI integrator
+        </span>
+        . I specialize in crafting real-world applications with custom backend
+        logic and AI-powered features. Building{" "}
+        <span className="italic">fast, type-safe systems that scale</span> is my
+        passion.
       </motion.p>
 
       <motion.div
@@ -118,9 +113,9 @@ const Intro = () => {
             href="https://github.com/ZVKubajak"
             target="_blank"
             rel="noopener noreferrer"
-            className="outline-none"
+            className="outline-none rounded-full"
           >
-            <button className="rounded-full bg-slate-50 text-neutral-900 p-2.5 border-2 border-gray-200 hover:bg-black hover:text-white hover:scale-105 active:scale-95 transition dark:bg-slate-900 dark:text-slate-50 dark:border-gray-700">
+            <button className="rounded-full bg-slate-50 text-neutral-900 p-2.5 border-2 border-gray-200 hover:bg-gray-950 hover:text-white hover:scale-105 active:scale-95 transition dark:bg-slate-900 dark:text-slate-50 dark:border-gray-700 cursor-pointer">
               <Github size={28} />
             </button>
           </a>
@@ -129,9 +124,9 @@ const Intro = () => {
             href="https://www.linkedin.com/in/zander-kubajak-b37792335/"
             target="_blank"
             rel="noopener noreferrer"
-            className="outline-none"
+            className="outline-none rounded-full"
           >
-            <button className="rounded-full bg-slate-50 text-neutral-900 p-2.5 border-2 border-gray-200 hover:bg-sky-600 hover:text-white hover:scale-105 active:scale-95 transition dark:bg-slate-900 dark:text-slate-50 dark:border-gray-700">
+            <button className="rounded-full bg-slate-50 text-neutral-900 p-2.5 border-2 border-gray-200 hover:bg-sky-600 hover:text-white hover:scale-105 active:scale-95 transition dark:bg-slate-900 dark:text-slate-50 dark:border-gray-700 cursor-pointer">
               <Linkedin size={28} />
             </button>
           </a>
